@@ -1,0 +1,136 @@
+.projeto {
+  grid-column: span 12 ;
+  display: flex; 
+  flex-direction: column;
+  width: 100%;
+  padding-bottom: 50px;
+  }
+  
+  .projeto h2 {
+    margin-left: 105px; /* Adicione uma margem à direita para separar os elementos */
+    font-size: 2em;
+  color:#1A9EC5;
+  }
+  
+  .projeto h2 {
+    position: relative; /* Garante que o h2 tenha posição relativa */
+  }
+  
+  .projeto h2::before {
+    content: "";
+    display: block;
+    width: 22px;
+    height: 6px;
+    background-color: #C2701B; /* Detalhe pequeno à esquerda do texto */
+    position: absolute;
+    left: -24px; /* Ajuste a posição conforme necessário */
+    top: 45%; /* Ajuste a posição conforme necessário */
+    transform: translateY(-50%);
+  }
+  
+  .lateral-projeto{
+    display: flex;
+    margin-left: 8px;
+  }
+  .lateral-projeto p {
+    font-weight: 600;
+    text-align: justify;
+    width: 100%;
+    margin-left:29px;
+    margin-right:50px;
+    color: #1A9EC5;
+    margin-left:64px;
+    margin-top: 29px;
+  }
+  
+  .blue{
+    color:#1A9EC5;
+  }
+  
+  .projeto-icon {
+  display: flex;
+  justify-content: space-evenly;
+  height: auto;
+  flex-wrap: wrap;
+  max-width: 70rem;
+  gap: 15px;
+ 
+  }
+  .wrapper-projeto{
+    width: 100%;
+    display: flex;
+    justify-content: center
+  }
+  
+  .icon-projeto {
+    background-color: #011820;
+    padding: 20px 35px;
+    visibility: hidden; /* Oculta o elemento por padrão */
+    text-align: center;
+    text-decoration: none
+  }
+  .projeto-icon a {
+    text-decoration: none; /* Remove o sublinhado dos links dentro de .projeto-icon */
+}
+
+  /* Adiciona a animação somente quando o elemento é visível */
+  .icon-projeto.animate {
+    visibility: visible;
+    -webkit-animation: shadow-pop-tr 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    animation: shadow-pop-tr 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+  }
+  
+  .icon-projeto p {  
+    margin: 0; /* Remove margem padrão */
+    width: 100%;
+    text-align: center;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #D0EAF2;
+  }
+  .icon-projeto img{
+    width: 15em;
+  }
+  
+  @-webkit-keyframes shadow-pop-tr {
+    0% {
+      -webkit-box-shadow: 0 0 #D0EAF2, 0 0 #D0EAF2, 0 0 #D0EAF2, 0 0 #D0EAF2, 0 0 #D0EAF2, 0 0 #D0EAF2, 0 0 #D0EAF2, 0 0 #D0EAF2;
+      box-shadow: 0 0 #D0EAF2, 0 0 #D0EAF2, 0 0 #D0EAF2, 0 0 #D0EAF2, 0 0 #D0EAF2, 0 0 #D0EAF2, 0 0 #D0EAF2, 0 0 #D0EAF2;
+      -webkit-transform: translateX(0) translateY(0);
+      transform: translateX(0) translateY(0);
+    }
+    100% {
+      -webkit-box-shadow: 1px -1px #D0EAF2, 2px -2px #D0EAF2, 3px -3px #D0EAF2, 4px -4px #D0EAF2, 5px -5px #D0EAF2, 6px -6px #D0EAF2, 7px -7px #D0EAF2, 8px -8px #D0EAF2;
+      box-shadow: 1px -1px #D0EAF2, 2px -2px #D0EAF2, 3px -3px #D0EAF2, 4px -4px #D0EAF2, 5px -5px #D0EAF2, 6px -6px #D0EAF2, 7px -7px #D0EAF2, 8px -8px #D0EAF2;
+      -webkit-transform: translateX(-8px) translateY(8px);
+      transform: translateX(-8px) translateY(8px);
+    }
+  }
+  
+  @keyframes shadow-pop-tr {
+    0% {
+      -webkit-box-shadow: 0 0 #D0EAF2, 0 0 #D0EAF2, 0 0 #D0EAF2, 0 0 #D0EAF2, 0 0 #D0EAF2, 0 0 #d0d4d5, 0 0 #D0EAF2, 0 0 #D0EAF2;
+      box-shadow: 0 0 #D0EAF2, 0 0 #D0EAF2, 0 0 #D0EAF2, 0 0 #D0EAF2, 0 0 #D0EAF2, 0 0 #D0EAF2, 0 0 #D0EAF2, 0 0 #D0EAF2;
+      -webkit-transform: translateX(0) translateY(0);
+      transform: translateX(0) translateY(0);
+    }
+    100% {
+      -webkit-box-shadow: 1px -1px #D0EAF2, 2px -2px #D0EAF2, 3px -3px #D0EAF2, 4px -4px #1A9EC5, 5px -5px #1A9EC5, 6px -6px #1A9EC5, 7px -7px #1A9EC5, 8px -8px #1A9EC5;
+      box-shadow: 1px -1px #1A9EC5, 2px -2px #1A9EC5, 3px -3px #1A9EC5, 4px -4px #1A9EC5, 5px -5px #1A9EC5, 6px -6px #1A9EC5, 7px -7px #1A9EC5, 8px -8px #1A9EC5;
+      -webkit-transform: translateX(-8px) translateY(8px);
+      transform: translateX(-8px) translateY(8px);
+    }
+  }
+  
+  
+  
+  
+
+  
+
+
+  
+  
+  
+  
+  

@@ -1,0 +1,31 @@
+.contatos{
+  width: 100%;
+  grid-column: span 12 ;
+  background-color: #011820;
+  text-align: center;
+  padding-bottom: 200px;
+}
+
+.contatos h1{
+  text-align: center;
+  color: #D0EAF2;
+ padding-bottom: 80px;
+}
+.contatos h2{
+  text-align: center;
+  color: #D0EAF2;
+}
+
+.lista_contatos{
+  display: flex;
+  justify-content: space-evenly;
+}
+.lista_contatos p{
+color:#D0EAF2;
+}
+
+.link a {
+  text-decoration: none;
+  color: inherit;
+}
+

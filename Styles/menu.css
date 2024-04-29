@@ -1,0 +1,55 @@
+
+
+.header {
+  grid-column: span 12;
+  background-color: #011820; /* Cor de fundo do header */
+  color: #1A9EC5; /* Cor do texto do header */
+  padding: 10px 5px; /* Aumentei o espaçamento interno (padding) */
+  position: fixed;
+  width: 100%;
+  height: 55px;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #D0EAF2; /* Borda mais grossa na parte de baixo do menu */
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu,
+.toggle {
+  cursor: pointer;
+  margin-right: 25px;
+}
+
+
+
+
+
+
+#portfolioButton {
+  cursor: pointer;
+}
+
+#portfolioButton:hover {
+  cursor: pointer;
+}
+
+#toggleImage {
+  width: 20px;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+#toggleImage:hover {
+  transform: scale(1.1);
+}
+
+
+.header {
+  background-color: #000B0F; /* Cor de fundo da barra de scroll */
+}
+

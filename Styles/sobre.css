@@ -1,0 +1,48 @@
+.sobre {
+  grid-column: span 6;
+  padding: 20px;
+  margin-top: 160px;
+  margin-left: 120px;
+  font-size: 2em;
+  position: relative;
+}
+
+.sobre p {
+  color: #A6E2F5; /* Cor para a frase "Desenvolvedor Front-End" */
+  position: relative;
+}
+
+.sobre h1 span {
+  color: #C2701B; /* Cor para o restante do texto */
+}
+
+.sobre p::before {
+  content: "";
+  display: block;
+  width: 22px;
+  height: 6px;
+  background-color: #C2701B; /* Detalhe pequeno à esquerda do texto */
+  position: absolute;
+  left: -24px; /* Ajuste a posição conforme necessário */
+  top: 65%;
+  transform: translateY(-50%);
+}
+
+.imagem {
+  grid-column: span 6;
+  max-width: 60%;
+  height: auto;
+  margin-top: 140px;
+  margin-left: 120px;
+  background-color: #000B0F; /* Cor de fundo ao redor da imagem */
+  border-right: 200px #000B0F;
+}
+
+
+#linkedinImage {
+  cursor: pointer;
+}
+
+#linkedinImage:hover {
+  cursor: pointer;
+}

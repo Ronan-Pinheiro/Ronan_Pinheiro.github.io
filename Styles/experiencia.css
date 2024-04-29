@@ -1,0 +1,112 @@
+.experiencia {
+  grid-column: span 11 ;
+  display: flex; 
+  margin-top: 100px;
+  margin-left: 105px;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 25px;
+}
+
+.experiencia h2 {
+  margin-right: 20px; /* Adicione uma margem à direita para separar os elementos */
+  font-size: 2em;
+
+}
+
+
+.lateral{
+  display: flex;
+  margin-left: 8px;
+}
+.lateral p {
+  font-weight: 600;
+  text-align: justify;
+  width: 100%;
+  margin-right: 50px;
+  margin-top: 28px
+}
+
+
+.orange {
+  color: #C2701B;
+}
+
+
+/* AAA */
+.empresa {
+ display: flex; /*para um ficar do lado do outro */
+ margin-left: 150px ;
+}
+
+.empresa .conteiner-empresa {
+  display: grid;  
+  grid-template-columns: 2fr 1fr;
+  padding: 20px;
+  background: #011820;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  position: relative;
+  gap: 10px 20px;
+  width: 100%;
+}
+
+
+.empresa-ano {
+  text-align: right;
+  width: 80px;
+  color: #FFFFFF;
+  font-size: 0.875rem;
+  margin-right: 20px;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.empresa-titulo {
+  font: size 1.125rem;
+  line-height: 1.1;
+  font-weight: bold;
+}
+
+.empresa-texto {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: #D0EAF2;
+  text-align: justify;
+  width: 100%
+}
+
+.empresa-funcao{
+  margin-left: 40px
+}
+.empresa-habilidades {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-content: start;
+  color: #000B0F;
+  list-style-type: none;
+}
+.empresa-habilidades li {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  border-radius: 4px;
+  background: #F4C621;
+  padding: 5px 10px;
+}
+
+.experiencia h2 {
+  position: relative; /* Garante que o h2 tenha posição relativa */
+}
+
+.experiencia h2::before {
+  content: "";
+  display: block;
+  width: 22px;
+  height: 6px;
+  background-color: #C2701B; /* Detalhe pequeno à esquerda do texto */
+  position: absolute;
+  left: -24px; /* Ajuste a posição conforme necessário */
+  top: 48%; /* Ajuste a posição conforme necessário */
+  transform: translateY(-50%);
+}
